@@ -14,8 +14,8 @@ x2_b = r.randint(x1_b, MAX_X)
 y1_b = r.randint(0, MAX_Y)
 y2_b = r.randint(y1_b, MAX_Y)   
 
-sq_cord_1 = [x1_b, x1_b, x2_b, x2_b, x1_b]
-sq_cord_2 = [y1_b, y2_b, y2_b, y1_b, y1_b]
+rect_cord_1 = [x1_b, x1_b, x2_b, x2_b, x1_b]
+rect_cord_2 = [y1_b, y2_b, y2_b, y1_b, y1_b]
 
 start_time = time.time()
 line_cord = [[
@@ -36,7 +36,7 @@ for l in range(LINES):
         cnt += 1
         axis[1].plot([x1, x2], [y1, y2])
 
-axis[1].plot(sq_cord_1, sq_cord_2, label='Square Bound')
+axis[1].plot(rect_cord_1, rect_cord_2, label='rectangle Bound')
 axis[0].set_title('All lines')
 axis[1].set_title(f'Filtered {cnt} lines')
 end_time = time.time()
