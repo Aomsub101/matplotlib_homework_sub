@@ -1,0 +1,1 @@
+# Homework - filtering segments with or without numpy. Matplotlib.
