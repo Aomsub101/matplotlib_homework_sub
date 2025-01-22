@@ -1,5 +1,5 @@
 """
------ Without using numpy -----
+----- Using numpy -----
 """
 import matplotlib.pyplot as plt
 import numpy as np
